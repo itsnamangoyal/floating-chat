@@ -1,0 +1,19 @@
+{
+  "name": "floating-chat",
+  "type": "module",
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "dev:server": "cd ./server && bun run dev",
+    "dev:client": "cd ./client && bun run start"
+  },
+  "devDependencies": {
+    "bun-types": "^0.5.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0",
+    "zod": "^3.21.4"
+  }
+}

@@ -1,0 +1,25 @@
+.App {
+  @apply m-0 p-0 h-full w-full cursor-none;
+
+  > .cursor {
+    @apply fixed transition-transform;
+
+    &[data-hidden="true"] {
+      @apply hidden;
+    }
+
+    > .input {
+      @apply absolute top-3/4 left-3/4 outline-none select-none transition-transform origin-top-left ease-in-out scale-0 bg-opacity-0 resize-none;
+      @apply min-h-[6rem] h-fit w-72 px-3 py-2 rounded-r-3xl rounded-bl-3xl;
+      @apply bg-yellow-600 shadow-yellow-300 shadow-inner;
+
+      &[data-active="true"] {
+        @apply scale-100 mix-blend-darken text-white bg-opacity-100;
+      }
+    }
+
+    > .arrow {
+      @apply w-6 h-6 -rotate-12 -translate-x-1 -translate-y-1 fill-yellow-600;
+    }
+  }
+}
