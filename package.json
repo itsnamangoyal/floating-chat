@@ -13,7 +13,6 @@
     "bun-types": "^0.5.0"
   },
   "peerDependencies": {
-    "typescript": "^5.0.0",
-    "zod": "^3.21.4"
+    "typescript": "^5.0.0"
   }
 }
